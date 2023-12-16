@@ -11,10 +11,17 @@ void main() {
   Cylinder cylinder2 = Cylinder(radius: 4.3, length: 55.0);
   Cylinder cylinder3 = Cylinder(radius: 23.6, length: 95.9);
 
-  final List objectList = [];
-  objectList.addAll([circle1, circle2, circle3]);
-  objectList.addAll([rectangle1, rectangle2, rectangle3]);
-  objectList.addAll([cylinder1, cylinder2, cylinder3]);
+  final List<GeometricObject> objectList = [
+    circle1,
+    circle2,
+    circle3,
+    rectangle1,
+    rectangle2,
+    rectangle3,
+    cylinder1,
+    cylinder2,
+    cylinder3
+  ];
   print(objectList);
 }
 
