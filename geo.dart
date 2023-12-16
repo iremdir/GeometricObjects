@@ -1,4 +1,4 @@
-void main() {
+main() {
   Circle circle1 = Circle();
   Circle circle2 = Circle(radius: 4.0);
   Circle circle3 = Circle(radius: 13.5);
@@ -22,7 +22,9 @@ void main() {
     cylinder2,
     cylinder3
   ];
-  print(objectList);
+  for (GeometricObject object in objectList) {
+    return '${object.toString()}';
+  }
 }
 
 abstract class GeometricObject {
