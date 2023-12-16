@@ -22,9 +22,7 @@ main() {
     cylinder2,
     cylinder3
   ];
-  for (GeometricObject object in objectList) {
-    return '${object.toString()}';
-  }
+  print(objectList);
 }
 
 abstract class GeometricObject {
